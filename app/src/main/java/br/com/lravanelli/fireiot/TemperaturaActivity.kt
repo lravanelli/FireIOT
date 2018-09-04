@@ -6,6 +6,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_temperatura.*
 
 class TemperaturaActivity : AppCompatActivity() {
@@ -15,6 +16,7 @@ class TemperaturaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_temperatura)
 
         lerTemperatura()
+        FirebaseMessaging.getInstance().subscribeToTopic("temperatura");
     }
 
     private fun lerTemperatura() {
