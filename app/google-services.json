@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "502073765864",
+    "firebase_url": "https://helloiot-7318f.firebaseio.com",
+    "project_id": "helloiot-7318f",
+    "storage_bucket": "helloiot-7318f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502073765864:android:4b7c8ff07afa6914",
+        "android_client_info": {
+          "package_name": "br.com.lravanelli.fireiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502073765864-nubj920er2tvam9a44jife3m0e1a1d3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.lravanelli.fireiot",
+            "certificate_hash": "beb224284730e1ec2ea6857c4e52af0c0438cd6c"
+          }
+        },
+        {
+          "client_id": "502073765864-tjs42dh1j328pem3hhnvk3usaq499hd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJhobTFkhQaeB4FHALwuT9Rvax40RPo9s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502073765864-tjs42dh1j328pem3hhnvk3usaq499hd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
