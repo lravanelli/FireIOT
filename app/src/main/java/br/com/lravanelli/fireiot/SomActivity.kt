@@ -7,19 +7,20 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.messaging.FirebaseMessaging
-import kotlinx.android.synthetic.main.activity_temperatura.*
+import kotlinx.android.synthetic.main.activity_som.*
 
-class TemperaturaActivity : AppCompatActivity() {
+
+class SomActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_temperatura)
+        setContentView(R.layout.activity_som)
 
-        lerTemperatura()
+        verificaSom()
         FirebaseMessaging.getInstance().subscribeToTopic("som14mob");
     }
 
-    private fun lerTemperatura() {
+    private fun verificaSom() {
         val database = FirebaseDatabase.getInstance().reference
         database.child("somAtu").addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError?) {
@@ -28,7 +29,7 @@ class TemperaturaActivity : AppCompatActivity() {
 
             override fun onDataChange(p0: DataSnapshot?) {
                 val temp = p0?.getValue(Double::class.java)
-                tvTemperatura.text = temp.toString()
+                tvSom.text = temp.toString()
             }
         })
     }
